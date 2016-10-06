@@ -1,9 +1,9 @@
 ### Project specific config ###
-language: generic
+language: javascript
 
 env:
   global:
-    - APM_TEST_PACKAGES=
+    - APM_TEST_PACKAGES="atom-space-pen-views"
     - ATOM_LINT_WITH_BUNDLED_NODE=true
 
   matrix:
