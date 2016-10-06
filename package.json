@@ -1,0 +1,19 @@
+{
+  "name": "atom-console",
+  "main": "./lib/atom-console",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-console:toggle"
+  },
+  "repository": "https://github.com/atom/atom-console",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": ">=2.2.0"
+  }
+}

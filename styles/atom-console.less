@@ -1,0 +1,68 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.atom-console {
+    height: 100%;
+    width: 100%;
+    font-size: @input-font-size;
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.console-wrapper {
+    border-top: 1px solid @pane-item-border-color;
+}
+
+.console {
+    position: absolute;
+    display: inline-block;
+    text-indent: 0.5%;
+    background-color: @app-background-color;
+    border: none;
+    width: 100%;
+}
+
+.console-prefix {
+    display: inline-block;
+    border-top: 1px solid @pane-item-border-color;
+    left: 0;
+    color: @button-background-color-selected;
+    font-weight: bold;
+}
+
+.custom-bottom-panel {
+    height: 100%;
+}
+
+atom-text-editor[mini].console{
+  display: inline-block;
+  font-size: @input-font-size;
+  background-color: @app-background-color;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-top: 1px solid @pane-item-border-color;
+  border-radius: 0;
+  line-height: inherit;
+  box-shadow: none;
+}
+
+atom-text-editor[mini].console.is-focused {
+  display: inline-block;
+  font-size: @input-font-size;
+  background-color: @app-background-color;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-top: 1px solid @pane-item-border-color;
+  border-radius: 0;
+  line-height: inherit;
+  box-shadow: none;
+}
+
+atom-text-editor[mini].console::shadow .cursors .cursor  {
+  border-width: 7px;
+  bottom: 4px;
+}
