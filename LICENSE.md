@@ -1,4 +1,4 @@
-Copyright (c) 2016 Elijah Schutz
+Copyright (c) 2016 Elijah Schutz (https://github.com/atom/atom-console)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

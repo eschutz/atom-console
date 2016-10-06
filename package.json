@@ -2,13 +2,22 @@
   "name": "atom-console",
   "main": "./lib/atom-console",
   "version": "0.1.0",
-  "description": "A console for Atom in the vein of Emac's 'M-x' feature.",
+  "description": "A console for Atom in the vein of Emac's 'M-x' feature",
   "keywords": [
+    "console",
+    "terminal",
+    "emacs",
+    "command",
+    "commands",
+    "execute"
   ],
   "activationCommands": {
     "atom-workspace": "atom-console:toggle"
   },
-  "repository": "https://github.com/atom/atom-console",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atom/atom-console"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
