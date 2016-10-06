@@ -12,7 +12,7 @@ describe('AtomConsole', () => {
 
     beforeEach(() => {
         workspaceElement = atom.views.getView(atom.workspace);
-        activationPromise = atom.packages.activatePackage('atom console');
+        activationPromise = atom.packages.activatePackage('atom-console');
     });
 
     describe('when the atom-console:toggle event is triggered', () => {
