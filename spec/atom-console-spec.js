@@ -8,66 +8,66 @@ import AtomConsole from '../lib/atom-console';
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
 describe('AtomConsole', () => {
-  let workspaceElement, activationPromise;
+    let workspaceElement, activationPromise;
 
-  beforeEach(() => {
-    workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('atom-console');
-  });
-
-  describe('when the atom-console:toggle event is triggered', () => {
-    it('hides and shows the modal panel', () => {
-      // Before the activation event the view is not on the DOM, and no panel
-      // has been created
-      expect(workspaceElement.querySelector('.atom-console')).not.toExist();
-
-      // This is an activation event, triggering it will cause the package to be
-      // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
-
-      waitsForPromise(() => {
-        return activationPromise;
-      });
-
-      runs(() => {
-        expect(workspaceElement.querySelector('.atom-console')).toExist();
-
-        let atomConsoleElement = workspaceElement.querySelector('.atom-console');
-        expect(atomConsoleElement).toExist();
-
-        let atomConsolePanel = atom.workspace.panelForItem(atomConsoleElement);
-        expect(atomConsolePanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
-        expect(atomConsolePanel.isVisible()).toBe(false);
-      });
+    beforeEach(() => {
+        workspaceElement = atom.views.getView(atom.workspace);
+        activationPromise = atom.packages.activatePackage('atom console');
     });
 
-    it('hides and shows the view', () => {
-      // This test shows you an integration test testing at the view level.
+    describe('when the atom-console:toggle event is triggered', () => {
+        it('slides the console on or off screen', () => {
+            // Before the activation event the view is not on the DOM, and no panel
+            // has been created
+            expect(workspaceElement.querySelector('.atom-console')).not.toExist();
 
-      // Attaching the workspaceElement to the DOM is required to allow the
-      // `toBeVisible()` matchers to work. Anything testing visibility or focus
-      // requires that the workspaceElement is on the DOM. Tests that attach the
-      // workspaceElement to the DOM are generally slower than those off DOM.
-      jasmine.attachToDOM(workspaceElement);
+            // This is an activation event, triggering it will cause the package to be
+            // activated.
+            atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
 
-      expect(workspaceElement.querySelector('.atom-console')).not.toExist();
+            waitsForPromise(() => {
+                return activationPromise;
+            });
 
-      // This is an activation event, triggering it causes the package to be
-      // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
+            runs(() => {
+                expect(workspaceElement.querySelector('.atom-console')).toExist();
 
-      waitsForPromise(() => {
-        return activationPromise;
-      });
+                let atomConsoleElement = workspaceElement.querySelector('.atom-console');
+                expect(atomConsoleElement).toExist();
 
-      runs(() => {
-        // Now we can test for view visibility
-        let atomConsoleElement = workspaceElement.querySelector('.atom-console');
-        expect(atomConsoleElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
-        expect(atomConsoleElement).not.toBeVisible();
-      });
+                let atomConsolePanel = atom.workspace.panelForItem(atomConsoleElement);
+                expect(atomConsoleElement.style.height).not.toEqual(0);
+                atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
+                expect(atomConsoleElement.style.height).toEqual(0);
+            });
+        });
+
+        it('slides the console on or off screen', () => {
+            // This test shows you an integration test testing at the view level.
+
+            // Attaching the workspaceElement to the DOM is required to allow the
+            // `toBeVisible()` matchers to work. Anything testing visibility or focus
+            // requires that the workspaceElement is on the DOM. Tests that attach the
+            // workspaceElement to the DOM are generally slower than those off DOM.
+            jasmine.attachToDOM(workspaceElement);
+
+            expect(workspaceElement.querySelector('.atom-console')).not.toExist();
+
+            // This is an activation event, triggering it causes the package to be
+            // activated.
+            atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
+
+            waitsForPromise(() => {
+                return activationPromise;
+            });
+
+            runs(() => {
+                // Now we can test for view visibility
+                let atomConsoleElement = workspaceElement.querySelector('.atom-console');
+                expect(atomConsoleElement.style.height).not.toEqual(0);
+                atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
+                expect(atomConsoleElement.style.height).toEqual(0);
+            });
+        });
     });
-  });
 });

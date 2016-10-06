@@ -3,7 +3,6 @@
 import AtomConsoleView from '../lib/atom-console-view';
 
 describe('AtomConsoleView', () => {
-  it('has one valid test', () => {
-    expect('life').toBe('easy');
+  it('creates the view and functions for the Atom Console', () => {
   });
 });
