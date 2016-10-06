@@ -1,8 +1,8 @@
 {
   "name": "atom-console",
   "main": "./lib/atom-console",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.1.0",
+  "description": "A console for Atom in the vein of Emac's 'M-x' feature.",
   "keywords": [
   ],
   "activationCommands": {
