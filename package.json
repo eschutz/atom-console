@@ -22,7 +22,8 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "atom-space-pen-views": ">=2.2.0"
+    "atom-space-pen-views": ">=2.2.0",
+    "set-syntax-emacs": "git+https://github.com/eschutz/set-syntax-emacs.git"
   },
   "bugs": {
     "url": "https://github.com/eschutz/atom-console/issues"
