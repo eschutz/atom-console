@@ -36,9 +36,9 @@ describe('AtomConsole', () => {
                 expect(atomConsoleElement).toExist();
 
                 let atomConsolePanel = atom.workspace.panelForItem(atomConsoleElement);
-                //expect(atomConsoleElement.style.height).not.toEqual("0px");
+                expect(AtomConsole.atomConsoleVisible).toEqual(true);
                 atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
-                //expect(atomConsoleElement.style.height).toEqual("0px");
+                expect(AtomConsole.atomConsoleVisible).toEqual(false);
             });
         });
 
@@ -64,9 +64,9 @@ describe('AtomConsole', () => {
             runs(() => {
                 // Now we can test for view visibility
                 let atomConsoleElement = workspaceElement.querySelector('.atom-console');
-                //expect(atomConsoleElement.style.height).not.toEqual("0px");
+                expect(AtomConsole.atomConsoleVisible).toEqual(true);
                 atom.commands.dispatch(workspaceElement, 'atom-console:toggle');
-                //expect(atomConsoleElement.style.height).toEqual("0px");
+                expect(AtomConsole.atomConsoleVisible).toEqual(false);
             });
         });
     });

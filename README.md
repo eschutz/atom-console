@@ -1,4 +1,5 @@
 # atom-console package
+[![Build Status](https://travis-ci.org/eschutz/atom-console.svg?branch=master)](https://travis-ci.org/eschutz/atom-console)
 
 An Emacs-style console interface for Atom.
 
@@ -10,7 +11,7 @@ Until that is implemented:
 
 ```
 cd ~/.atom/packages/atom-console
-git clone https://github.com/eschutz/atom-console.git 
+git clone https://github.com/eschutz/atom-console.git
 apm install
 ```
 
