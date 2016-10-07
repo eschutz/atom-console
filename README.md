@@ -1,5 +1,6 @@
 # atom-console package
 [![Build Status](https://travis-ci.org/eschutz/atom-console.svg?branch=master)](https://travis-ci.org/eschutz/atom-console)
+[![Build status](https://ci.appveyor.com/api/projects/status/6ba8t60j9nvwkhxr/branch/master?svg=true)](https://ci.appveyor.com/project/eschutz/atom-console/branch/master)
 
 An Emacs-style console interface for Atom.
 
