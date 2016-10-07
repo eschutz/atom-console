@@ -7,8 +7,11 @@ An Emacs-style console interface for Atom.
 ![console_gif](https://cloud.githubusercontent.com/assets/17667220/19153791/74b184d0-8c1f-11e6-9829-8b654ceb99bc.gif)
 
 ## Installation
-atom-console is not currently available for installation via `apm install atom-console`, however it will be soon.
-Until that is implemented:
+The latest stable version of atom-console is available through Atom's package manager in the settings or via
+<br>
+`apm install atom-console`.
+
+Install the latest Github release (may be unstable) with:
 
 ```
 cd ~/.atom/packages

@@ -1,22 +1,21 @@
 {
   "name": "atom-console",
   "main": "./lib/atom-console",
-  "version": "0.1.0",
+  "author": "eschutz",
+  "version": "0.0.0",
+  "readme": "./README.md",
   "description": "A console for Atom in the vein of Emac's 'M-x' feature",
   "keywords": [
     "console",
     "terminal",
-    "emacs",
-    "command",
-    "commands",
-    "execute"
+    "command"
   ],
   "activationCommands": {
     "atom-workspace": "atom-console:toggle"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/atom-console"
+    "url": "https://github.com/eschutz/atom-console"
   },
   "license": "MIT",
   "engines": {
@@ -24,5 +23,9 @@
   },
   "dependencies": {
     "atom-space-pen-views": ">=2.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/eschutz/atom-console/issues"
+  },
+  "homepage": "https://github.com/eschutz/atom-console#readme"
 }
