@@ -31,7 +31,7 @@ branches:
     - master
 
 git:
-  depth: 10
+  depth: 20
 
 sudo: false
 

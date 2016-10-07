@@ -16,7 +16,7 @@ branches:
 
 version: "{build}"
 platform: x64
-clone_depth: 10
+clone_depth: 20
 skip_tags: true
 test: off
 deploy: off
