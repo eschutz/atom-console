@@ -30,7 +30,7 @@ In future custom commands (especially ones inspired by Emac's `M-x` console) wil
 * Perform custom commands that execute Javascript (soon)
 
 ## Contributing
-Bug reports, suggestions etc. are welcome on Github https://github.com/eschutz/atom-console.
+Bug reports, suggestions etc. are welcome on Github https://github.com/eschutz/atom-console/issues.
 
 ## License
 This package is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
