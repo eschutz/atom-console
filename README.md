@@ -11,22 +11,23 @@ atom-console is not currently available for installation via `apm install atom-c
 Until that is implemented:
 
 ```
-cd ~/.atom/packages/atom-console
-git clone https://github.com/eschutz/atom-console.git
+cd ~/.atom/packages
+git clone https://github.com/eschutz/atom-console.git atom-console
+cd atom-console
 apm install
 ```
 
-##Usage
+## Usage
 Toggle `atom-console` with `alt-ctrl-x`, then enter any command specified within Atom. To see all available commands, open the developer console and type `atom.commands.registeredCommands`.
 
 In future custom commands (especially ones inspired by Emac's `M-x` console) will be added, such as `package-install`.
 
-##Features
+## Features
 * Execute any Atom command from a more traditional console, as opposed to the built in command palette
 * Perform custom commands that execute Javascript (soon)
 
-##Contributing
+## Contributing
 Bug reports, suggestions etc. are welcome on Github https://github.com/eschutz/atom-console.
 
-##License
+## License
 This package is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
