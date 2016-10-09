@@ -23,11 +23,11 @@
   },
   "dependencies": {
     "atom-space-pen-views": ">=2.2.0",
-    "atom-package-deps": ">=4.3.1"
+    "atom-package-dependencies": "latest"
   },
-  "package-deps": [
-    "set-syntax-emacs"
-  ],
+  "package-dependencies": {
+    "set-syntax-emacs":">=0.1.0"
+  },
   "bugs": {
     "url": "https://github.com/eschutz/atom-console/issues"
   },
