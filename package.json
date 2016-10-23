@@ -2,7 +2,7 @@
   "name": "atom-console",
   "main": "./lib/atom-console",
   "author": "eschutz",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "readme": "./README.md",
   "description": "A console for Atom in the vein of Emac's 'M-x' feature",
   "keywords": [
@@ -27,7 +27,7 @@
     "fs-plus": ">=2.9.3"
   },
   "package-dependencies": {
-    "set-syntax-emacs":">=0.1.0"
+    "set-syntax-emacs": ">=0.1.0"
   },
   "bugs": {
     "url": "https://github.com/eschutz/atom-console/issues"
