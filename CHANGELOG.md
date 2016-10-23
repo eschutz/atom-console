@@ -7,3 +7,9 @@
 ## 0.2.0
 * Added `[language]-mode` and `package-install` commands
 * Added terminal Octicon
+
+## 0.2.1
+* Added loading symbol for network tools
+* Improved styling
+* Added focus keymap
+* Code styling improvements

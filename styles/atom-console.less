@@ -33,8 +33,27 @@
     font-weight: bold;
 }
 
-.custom-term-icon {
+.custom-console-icon {
   color: @button-background-color-selected;
+}
+
+.load-icon-wrapper {
+  text-align: center;
+  direction: rtl;
+  display: inline-block;
+  position: absolute;
+  float: right;
+}
+
+.load-icon {
+  right: 1em;
+  direction: ltr;
+  text-indent: 0;
+  transform-origin: center;
+}
+
+.down-arrow {
+  right: 1.75em;
 }
 
 atom-text-editor[mini].console{
@@ -42,10 +61,9 @@ atom-text-editor[mini].console{
   font-size: @input-font-size;
   background-color: @app-background-color;
   width: 100%;
-  height: 100%;
   border: none;
-  border-top: 1px solid @pane-item-border-color;
   border-radius: 0;
+  border-top: 1px solid @pane-item-border-color;
   line-height: inherit;
   box-shadow: none;
 }
@@ -55,10 +73,9 @@ atom-text-editor[mini].console.is-focused {
   font-size: @input-font-size;
   background-color: @app-background-color;
   width: 100%;
-  height: 100%;
   border: none;
-  border-top: 1px solid @pane-item-border-color;
   border-radius: 0;
+  border-top: 1px solid @pane-item-border-color;
   line-height: inherit;
   box-shadow: none;
 }

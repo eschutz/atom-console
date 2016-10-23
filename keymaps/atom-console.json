@@ -1,6 +1,7 @@
 {
     "atom-workspace": {
-        "ctrl-alt-x": "atom-console:toggle"
+        "ctrl-alt-x": "atom-console:toggle",
+        "ctrl-alt-c": "atom-console:focus"
     },
     ".console": {
       "enter": "atom-console:send-command",
