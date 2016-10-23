@@ -55,7 +55,7 @@ Commands can be created with arguments and then anonymously called, e.g. if `foo
 ## Tools
 Tools, put simply, are [commands](#custom-commands) that take user input. Often a new console prefix is created to indicate that a tool is running, and all input from the console is passed to the tool.
 
-![tool-example](https://cloud.githubusercontent.com/assets/17667220/19625257/e171dc8a-995a-11e6-89f3-cbf2282d1089.gif)
+![tool_example](https://cloud.githubusercontent.com/assets/17667220/19625659/441bf612-9966-11e6-86af-933a4547281a.gif)
 
 Tools are classes that have a main function that takes user-input and does something with it, as shown by the `package-install` example.
 
