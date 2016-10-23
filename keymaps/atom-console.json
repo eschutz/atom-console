@@ -3,6 +3,7 @@
         "ctrl-alt-x": "atom-console:toggle"
     },
     ".console": {
-      "enter": "atom-console:send-command"
+      "enter": "atom-console:send-command",
+      "ctrl-alt-g": "atom-console:stop-tool"
     }
 }

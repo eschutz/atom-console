@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "atom-space-pen-views": ">=2.2.0",
-    "atom-package-dependencies": "latest"
+    "atom-package-dependencies": "latest",
+    "fs-plus": ">=2.9.3"
   },
   "package-dependencies": {
     "set-syntax-emacs":">=0.1.0"
