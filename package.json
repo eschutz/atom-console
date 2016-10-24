@@ -2,7 +2,7 @@
   "name": "atom-console",
   "main": "./lib/atom-console",
   "author": "eschutz",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "readme": "./README.md",
   "description": "A console for Atom in the vein of Emac's 'M-x' feature",
   "keywords": [
