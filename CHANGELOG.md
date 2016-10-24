@@ -13,3 +13,6 @@
 * Improved styling
 * Added focus keymap
 * Code styling improvements
+
+## 0.2.2
+* Updated the border of the bottom panel not to show while `atom-console` is toggled

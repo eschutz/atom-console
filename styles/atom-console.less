@@ -10,10 +10,11 @@
     font-size: @input-font-size;
     font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
     text-indent: 0.25em;
+    background-color: @app-background-color;
+    border-top: 2px solid @pane-item-border-color;
 }
 
 .console-wrapper {
-    border-top: 1px solid @pane-item-border-color;
 }
 
 .console {
@@ -27,7 +28,6 @@
 
 .console-prefix {
     display: inline-block;
-    border-top: 1px solid @pane-item-border-color;
     left: 0;
     color: @button-background-color-selected;
     font-weight: bold;
@@ -63,7 +63,6 @@ atom-text-editor[mini].console{
   width: 100%;
   border: none;
   border-radius: 0;
-  border-top: 1px solid @pane-item-border-color;
   line-height: inherit;
   box-shadow: none;
 }
@@ -75,7 +74,6 @@ atom-text-editor[mini].console.is-focused {
   width: 100%;
   border: none;
   border-radius: 0;
-  border-top: 1px solid @pane-item-border-color;
   line-height: inherit;
   box-shadow: none;
 }
