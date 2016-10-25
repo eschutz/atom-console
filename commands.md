@@ -15,6 +15,10 @@ These are the non-atom commands that can be executed in `atom-console`.
   * Changes the language mode of the current file, e.g. `ruby-mode`.
 * __package-install__
   * Starts an atom-console [sub-process](#tools), which installs the given atom package name.
+* __help__, __commands__
+  * Displays a help buffer containing all available commands.
+* __find__, __find-command__, __search__
+  * Search for a command.
 
 ## Custom Commands
 Atom Console is extendable via custom commands and [tools](#tools), which are written in JavaScript.
@@ -24,8 +28,13 @@ Currently the only example of a custom command natively in Atom Console is `[lan
 ### Creating a Custom Command
 Commands are single-file functions that can take arguments or be executed without arguments, and abide by the syntax:
 ```javascript
-export default function myCommand(){
+export default function myCommand() {
+  // If any arguments are given, return false
+  if (!(arguments.length == 0)) {
+    return false;
+  } else {
   // myCommand code here
+  }
 }
 ```
 This would then be saved to a file: `lib/cmd/my-command.js`.
@@ -69,7 +78,7 @@ __Optional__
 * `prefix`: the string preceding the input field, e.g. "Install package"
 * `networkTool`: set to `true` if the tool interacts with the internet, so `atom-console` knows to set a timeout
 * `output`: message to be output to console, mandatory if `networkTool` is true
-* `specialOutput`: the same as `output`, except for use when the tool does not interact with the internet
+* `specialOutput`: the same as `output`, except for use when the tool does not interact with the internet (Note: currently this is not implemented, check back soon for further developments)
 
 For a reference, look at `lib/cmd/package-install.js`.
 

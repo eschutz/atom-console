@@ -22,7 +22,7 @@ apm install
 
 ## Usage
 
-Toggle `atom-console` with `alt-ctrl-x`, then enter any command specified within Atom. To see all available commands, open the developer console and type `atom.commands.registeredCommands`.
+Toggle `atom-console` with `alt-ctrl-x`, then enter any command specified within Atom. To see all available commands, open `atom-console` and type 'help'. To search for commands, type 'find'.
 
 Currently included non-Atom commands include `[lang]-mode` and `package-install`. For more information see the [commands](#commands) section.
 

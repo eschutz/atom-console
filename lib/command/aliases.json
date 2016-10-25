@@ -1,4 +1,8 @@
 {
   "package-install":"PackageInstaller",
-  "reload":"window:reload"
+  "help":"listCommands",
+  "commands":"listCommands",
+  "search":"CommandSearch",
+  "find-command":"CommandSearch",
+  "find":"CommandSearch"
 }

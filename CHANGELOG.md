@@ -19,3 +19,6 @@
 
 ## 0.2.3
 * Updated readme file
+
+## 0.2.4
+* Added `help` and `find` commands
