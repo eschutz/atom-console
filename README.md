@@ -24,7 +24,9 @@ apm install
 
 Toggle `atom-console` with `alt-ctrl-x`, then enter any command specified within Atom. To see all available commands, open the developer console and type `atom.commands.registeredCommands`.
 
-As development continues, more custom commands will be added, especially ones inspired by Emac's `M-x` console.
+Currently included non-Atom commands include `[lang]-mode` and `package-install`. For more information see the [commands](#commands) section.
+
+As development continues, more custom [commands](#commands) will be added, especially ones inspired by Emac's `M-x` console.
 
 ## Features
 

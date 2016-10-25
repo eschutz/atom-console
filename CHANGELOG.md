@@ -16,3 +16,6 @@
 
 ## 0.2.2
 * Updated the border of the bottom panel not to show while `atom-console` is toggled
+
+## 0.2.3
+* Updated readme file
