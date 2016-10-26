@@ -22,3 +22,6 @@
 
 ## 0.2.4
 * Added `help` and `find` commands
+
+## 0.2.41
+* Fixed issue with command execution
