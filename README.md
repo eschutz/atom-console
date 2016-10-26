@@ -35,7 +35,9 @@ As development continues, more custom [commands](#commands) will be added, espec
 
 ## Commands
 
-See [the command documentation](./commands.md).
+Atom Console contains all of Atom's commands available via the command palette, as well as a growing list of custom commands, such as `[lang]-mode`, `package-install`. and `shell`.
+
+For more information and a complete list of custom commands, see [the command documentation](./commands.md).
 
 ## Keymaps
 

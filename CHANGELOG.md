@@ -25,3 +25,7 @@
 
 ## 0.2.5
 * Fixed issue with command execution
+
+## 0.2.6
+* Added `package-uninstall` and `shell` commands
+* Fixed an issue with `find`

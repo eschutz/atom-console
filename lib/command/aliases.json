@@ -4,5 +4,8 @@
   "commands":"listCommands",
   "search":"CommandSearch",
   "find-command":"CommandSearch",
-  "find":"CommandSearch"
+  "find":"CommandSearch",
+  "shell":"ConsoleShell",
+  "terminal":"ConsoleShell",
+  "package-uninstall":"PackageUninstaller"
 }

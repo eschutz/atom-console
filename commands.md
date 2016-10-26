@@ -13,12 +13,14 @@ Atom Console can also be extended with [custom commands](#custom-commands).
 These are the non-atom commands that can be executed in `atom-console`.
 * __[language]-mode__
   * Changes the language mode of the current file, e.g. `ruby-mode`.
-* __package-install__
+* __package-install__, __(package-uninstall)__
   * Starts an atom-console [sub-process](#tools), which installs the given atom package name.
 * __help__, __commands__
   * Displays a help buffer containing all available commands.
 * __find__, __find-command__, __search__
   * Search for a command.
+* __shell__, __terminal__
+  * Initialises a simple bash shell in a new buffer, with input from the console
 
 ## Custom Commands
 Atom Console is extendable via custom commands and [tools](#tools), which are written in JavaScript.
@@ -79,6 +81,7 @@ __Optional__
 * `networkTool`: set to `true` if the tool interacts with the internet, so `atom-console` knows to set a timeout
 * `output`: message to be output to console, mandatory if `networkTool` is true
 * `specialOutput`: the same as `output`, except for use when the tool does not interact with the internet (Note: currently this is not implemented, check back soon for further developments)
+* `clearConsoleAfterSubmit`: option to clear the console when the `return` key is pressed, instead of having custom or default output
 
 For a reference, look at `lib/cmd/package-install.js`.
 
