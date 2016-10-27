@@ -7,5 +7,7 @@
   "find":"CommandSearch",
   "shell":"ConsoleShell",
   "terminal":"ConsoleShell",
-  "package-uninstall":"PackageUninstaller"
+  "package-uninstall":"PackageUninstaller",
+  "calculator":"Calculator",
+  "calc":"Calculator"
 }
