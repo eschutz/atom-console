@@ -26,6 +26,9 @@
 ## 0.2.5
 * Fixed issue with command execution
 
-## 0.2.6
-* Added `package-uninstall` and `shell` commands
+## 0.3.0
+* Added commands:
+  * `package-uninstall`
+  * `shell`
+  * `calculator`
 * Fixed an issue with `find`

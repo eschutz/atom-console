@@ -20,7 +20,9 @@ These are the non-atom commands that can be executed in `atom-console`.
 * __find__, __find-command__, __search__
   * Search for a command.
 * __shell__, __terminal__
-  * Initialises a simple bash shell in a new buffer, with input from the console
+  * Initialises a simple bash shell in a new buffer, with input from the console.
+* __calculator__, __calc__
+  * A simple calculator
 
 ## Custom Commands
 Atom Console is extendable via custom commands and [tools](#tools), which are written in JavaScript.
