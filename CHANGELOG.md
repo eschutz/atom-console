@@ -36,3 +36,6 @@
 ## 0.3.1
 * Added console history
 * Added individual history option for tools
+* Added native support for setting grammar
+* Removed `set-syntax-emacs` from Atom Package dependencies
+* Removed npm package Atom Package Dependencies from dependencies
