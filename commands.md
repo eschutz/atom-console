@@ -84,6 +84,7 @@ __Optional__
 * `output`: message to be output to console, mandatory if `networkTool` is true
 * `specialOutput`: the same as `output`, except for use when the tool does not interact with the internet (Note: currently this is not implemented, check back soon for further developments)
 * `clearConsoleAfterSubmit`: option to clear the console when the `return` key is pressed, instead of having custom or default output
+* `historyFile`: an __absolute__ path to a history JSON file containing an array (cannot be empty, ensure it contains at least '[]')
 
 For a reference, look at `lib/cmd/package-install.js`.
 

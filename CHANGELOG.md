@@ -32,3 +32,7 @@
   * `shell`
   * `calculator`
 * Fixed an issue with `find`
+
+## 0.3.1
+* Added console history
+* Added individual history option for tools

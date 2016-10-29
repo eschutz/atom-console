@@ -5,6 +5,8 @@
     },
     ".console": {
       "enter": "atom-console:send-command",
-      "ctrl-alt-g": "atom-console:stop-tool"
+      "ctrl-alt-g": "atom-console:stop-tool",
+      "up": "atom-console:get-prev-command",
+      "down": "atom-console:get-next-command"
     }
 }
