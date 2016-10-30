@@ -18,7 +18,7 @@
 * Updated the border of the bottom panel not to show while `atom-console` is toggled
 
 ## 0.2.3
-* Updated readme file
+* Updated README
 
 ## 0.2.4
 * Added `help` and `find` commands
@@ -39,3 +39,10 @@
 * Added native support for setting grammar
 * Removed `set-syntax-emacs` from Atom Package dependencies
 * Removed npm package Atom Package Dependencies from dependencies
+
+## 0.3.2
+* Added `goto-line` and `what-line` commands
+* Rewrote the command execution system
+
+## 0.3.3
+* Updated README

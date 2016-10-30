@@ -26,7 +26,7 @@ Toggle `atom-console` with `alt-ctrl-x`, then enter any command specified within
 
 Currently included non-Atom commands include `[lang]-mode` and `package-install`. For more information see the [commands](#commands) section.
 
-As development continues, more custom [commands](#commands) will be added, especially ones inspired by Emac's `M-x` console.
+As development continues, more custom commands will be added, especially ones inspired by Emac's `M-x` console.
 
 ## Features
 
@@ -50,6 +50,11 @@ For more information and a complete list of custom commands, see [the command do
 ## Contributing
 
 Bug reports, suggestions etc. are welcome on Github <https://github.com/eschutz/atom-console/issues>.
+
+## Troubleshooting
+If some commands do not work immediately after installation, try reloading Atom with `⌃⌥⌘L` (ctrl-option-cmd-L) and using `atom-console`.
+
+__Note: As of version 0.3.2, some commands are unable to be executed in fresh windows (single tab containing a new, unsaved file). Opening a project or file will fix this, and it will be fixed in a future version.__
 
 ## License
 
