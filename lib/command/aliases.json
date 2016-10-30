@@ -9,5 +9,7 @@
   "terminal":"ConsoleShell",
   "package-uninstall":"PackageUninstaller",
   "calculator":"Calculator",
-  "calc":"Calculator"
+  "calc":"Calculator",
+  "goto-line":"GoToLine",
+  "what-line":"whatLine"
 }
