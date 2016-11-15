@@ -46,3 +46,6 @@
 
 ## 0.3.3
 * Updated README
+
+## 0.3.4
+* Fixed bug with version 1.12.2 of Atom where the console could not be selected
