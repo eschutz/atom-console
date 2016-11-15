@@ -49,3 +49,6 @@
 
 ## 0.3.4
 * Fixed bug with version 1.12.2 of Atom where the console could not be selected
+
+## 0.3.5
+* Fixed bug with calculator
