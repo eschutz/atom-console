@@ -86,6 +86,8 @@ __Optional__
 * `clearConsoleAfterSubmit`: option to clear the console when the `return` key is pressed, instead of having custom or default output
 * `historyFile`: an __absolute__ path to a history JSON file containing an array (cannot be empty, ensure it contains at least '[]')
 
+__Tools have available to them the `lib/tmp` directory, which gets automatically cleared when the console is toggled out of the screen. Save any temporary/buffer files there that are unneeded for future use.__
+
 For a reference, look at `lib/cmd/package-install.js`.
 
 Tools are installed into `atom-console` similarly to commands, except they use the `lib/command/tool-imports.js` file and __must be [aliased](#aliases)__.
