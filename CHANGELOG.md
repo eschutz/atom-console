@@ -1,3 +1,6 @@
+## 0.3.7
+* Removed deprecated `::shadow` CSS selector
+
 ## 0.3.6
 * Added file temporary directory `lib/tmp` for tools that open new buffers (e.g. `shell`, `find`) and other temporary files. See `commands.md` for more information.
   * This gets cleared when atom-console gets toggled out of the screen
