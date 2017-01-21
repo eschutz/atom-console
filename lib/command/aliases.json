@@ -11,5 +11,7 @@
   "calculator":"Calculator",
   "calc":"Calculator",
   "goto-line":"GoToLine",
-  "what-line":"whatLine"
+  "what-line":"whatLine",
+  "compile":"compile",
+  "cmp":"compile"
 }

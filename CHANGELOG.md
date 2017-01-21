@@ -1,3 +1,8 @@
+## 0.3.8
+* Added `cmp` command
+* Fixed `help` command to use `lib/tmp` for temporary markdown
+* Bug fixes
+
 ## 0.3.7
 * Removed deprecated `::shadow` CSS selector
 

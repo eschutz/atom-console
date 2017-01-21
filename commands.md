@@ -23,6 +23,22 @@ These are the non-atom commands that can be executed in `atom-console`.
   * Initialises a simple bash shell in a new buffer, with input from the console.
 * __calculator__, __calc__
   * A simple calculator
+* __goto-line__
+  * Go to the specified line
+* __what-line__
+  * Returns the line and column location of the cursor
+* __compile__, __cmp__
+  * Compiles the current file in the same directory with a language-specific compiler
+  * Currently supports:
+    * C/C++/Objective-C using `gcc`
+    * Java
+    * Swift
+    * Go
+    * Rust
+    * Scala
+    * Haskell
+    * Lua
+  * If you wish to add or change compilers, the source is found in `lib/cmd/cmp.js` and you can request additions via GitHub or email at elijah@jschutz.net
 
 ## Custom Commands
 Atom Console is extendable via custom commands and [tools](#tools), which are written in JavaScript.
