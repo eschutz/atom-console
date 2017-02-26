@@ -1,3 +1,9 @@
+## 0.3.10
+* Temporary hotfix for `atom.grammars` returning undefined (This is likely a bigger issue in Atom itself)
+
+## 0.3.9
+* Added file check before clearing `lib/tmp`
+
 ## 0.3.8
 * Added `cmp` command
 * Fixed `help` command to use `lib/tmp` for temporary markdown
