@@ -1,3 +1,7 @@
+## 0.3.11
+* Fixed actual source of `getGrammars()` problem (previously mistaken as `atom.grammars`)
+* Added autocomplete - bound to `tab`
+
 ## 0.3.10
 * Temporary hotfix for `atom.grammars` returning undefined (This is likely a bigger issue in Atom itself)
 

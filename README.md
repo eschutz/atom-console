@@ -22,15 +22,15 @@ apm install
 
 ## Usage
 
-Toggle `atom-console` with `alt-ctrl-x`, then enter any command specified within Atom. To see all available commands, open `atom-console` and type 'help'. To search for commands, type 'find'.
+Toggle `atom-console` with `alt-ctrl-x`, then enter any command specified within Atom. To see all available commands, open `atom-console` and type 'help'. To search for commands, type 'find'. Auto-complete with `tab`.
 
-Currently included non-Atom commands include `[lang]-mode` and `package-install`. For more information see the [commands](#commands) section.
+Some currently included non-Atom commands include commands bound to all grammar options in Atom (`[lang]-mode`) and `package-install`. A list of all built-in custom commands can be found in the [commands](#commands) section.
 
 As development continues, more custom commands will be added, especially ones inspired by Emac's `M-x` console.
 
 ## Features
 
-- Execute any Atom command from a more traditional console, as opposed to the built in command palette
+- Execute any Atom command from a convenient console, as opposed to the built in command palette
 - Perform custom commands that execute Javascript
 
 ## Commands
@@ -53,8 +53,6 @@ Bug reports, suggestions etc. are welcome on Github <https://github.com/eschutz/
 
 ## Troubleshooting
 If some commands do not work immediately after installation, try reloading Atom with `⌃⌥⌘L` (ctrl-option-cmd-L) and using `atom-console`.
-
-__Note: As of version 0.3.2, some commands are unable to be executed in fresh windows (single tab containing a new, unsaved file). Opening a project or file will fix this, and it will be fixed in a future version.__
 
 ## License
 
