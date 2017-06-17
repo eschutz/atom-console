@@ -1,3 +1,6 @@
+## 0.4.1
+* Edited `lib/atom-console.js` so spec won't fail.
+
 ## 0.4.0
 * Completely rewrote command execution system
 * Removed `lib/command/tool-imports.js` and merged it with `lib/command/command-imports.js`
