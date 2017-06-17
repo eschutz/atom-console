@@ -39,6 +39,13 @@ These are the non-atom commands that can be executed in `atom-console`.
     * Haskell
     * Lua
   * If you wish to add or change compilers, the source is found in `lib/cmd/cmp.js` and you can request additions via GitHub or email at elijah@jschutz.net
+* __add-alias__, __(remove-alias, rm-alias)__
+  * Creates an alias for any Atom or `atom-console` command.
+  * You can alias multiple Atom-only commands by separating them with a comma, e.g. `core:save, core:close`.
+* __create-tool__, __new-tool__
+  * Creates a new tool template, located at `lib/cmd/my-tool.js`.
+* __create-command__, __create-cmd__, __new-command__, __new-cmd__
+  * Creates a new command template, located at `lib/cmd/my-command.js`.
 
 ## Custom Commands
 Atom Console is extendable via custom commands and [tools](#tools), which are written in JavaScript.
@@ -49,17 +56,15 @@ Currently the only example of a custom command natively in Atom Console is `[lan
 Commands are single-file functions that can take arguments or be executed without arguments, and abide by the syntax:
 ```javascript
 export default function myCommand() {
-  // If any arguments are given, return false
-  if (!(arguments.length == 0)) {
-    return false;
-  } else {
-  // myCommand code here
-  }
+  // do something
+
+  // The return value will be printed to the console
+  return someValue;
 }
 ```
 This would then be saved to a file: `lib/cmd/my-command.js`.
 
-(Note: commands/tools don't *have* to be saved to `lib/cmd/`, but it's much cleaner if they're all kept in one directory.)
+(Note: commands/tools don't *have* to be saved to `lib/cmd/`, but it's best practice to keep them all in one directory.)
 
 To make `my-command` executable in `atom-console`, open up `lib/command/command-imports.js`:
 
@@ -78,27 +83,23 @@ export default class CustomCommands {
 ```
 Reload Atom and execute `myCommand`!
 
-#### Commands with arguments
-Commands can be created with arguments and then anonymously called, e.g. if `foo-bar` is entered into Atom Console and doesn't match any command name, it will be passed as an argument to each command until one returns `true`. As this is the case, please always return a value (`true` if the command executed correctly, `false` if anything else) and ensure that if your command does not take any arguments, return `false` if any are given.
-
 ## Tools
-Tools, put simply, are [commands](#custom-commands) that take user input. Often a new console prefix is created to indicate that a tool is running, and all input from the console is passed to the tool.
+Tools, put simply, are commands that take user input. Often a new console prefix is created to indicate that a tool is running, and all input from the console is passed to the tool.
 
 ![tool_example](https://cloud.githubusercontent.com/assets/17667220/19625659/441bf612-9966-11e6-86af-933a4547281a.gif)
 
 Tools are classes that have a main function that takes user-input and does something with it, as shown by the `package-install` example.
 
+Tools have a main function called `run(input)`, which is executed whenever `return` is pressed while the tool is active. The text content of the console is passed as an argument to run (`input`), and the return value of the function is printed to the console.
+
 Tools have available to them a number of variables:
 
 __Mandatory__
 * `isInteractive`: always set to `true` for a tool
-* `method`: the name of the main method (as a string) that will be passed user input
 
 __Optional__
 * `prefix`: the string preceding the input field, e.g. "Install package"
 * `networkTool`: set to `true` if the tool interacts with the internet, so `atom-console` knows to set a timeout
-* `output`: message to be output to console, mandatory if `networkTool` is true
-* `specialOutput`: the same as `output`, except for use when the tool does not interact with the internet (Note: currently this is not implemented, check back soon for further developments)
 * `clearConsoleAfterSubmit`: option to clear the console when the `return` key is pressed, instead of having custom or default output
 * `historyFile`: an __absolute__ path to a history JSON file containing an array (cannot be empty, ensure it contains at least '[]')
 
@@ -106,18 +107,15 @@ __Tools have available to them the `lib/tmp` directory, which gets automatically
 
 For a reference, look at `lib/cmd/package-install.js`.
 
-Tools are installed into `atom-console` similarly to commands, except they use the `lib/command/tool-imports.js` file and __must be [aliased](#aliases)__.
-
-If there are any errors with tools, feel free to submit a bug report as the tool system is fairly complex and error-prone.
+Tools are installed into `atom-console` similarly to commands, except instead of the class name after the object key, it should be:
+```javascript
+    "myTool":["startTool", myTool]
+```
 
 ## Aliases
-Atom Console supports aliases to create shortcuts for common [commands](#custom-commands) and commands that invoke [tools](#tools).
+Atom Console supports aliases to create shortcuts for common commands and tools.
 
-Aliases are set in `lib/command/aliases.json`, with the syntax `"command-name":"foo:bar"`, or in the case of a tool `"execute-tool":"ToolClassName"`. For example:
-```json
-{
-  "package-install":"PackageInstaller",
-  "reload":"window:reload"
-}
-```
-This allows the package installer to be executed via the command `package-install` and atom to be reloaded with `reload`. __Do not remove pre-set aliases from `aliases.json`__.
+Aliases are set in `lib/command/aliases.json`.
+To create a new alias, use the `add-alias` atom-console command. Likewise, `remove-alias` removes the specified alias.
+
+__Atom has to be reloaded after alias creation for the alias to work__

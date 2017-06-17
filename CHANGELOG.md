@@ -1,3 +1,15 @@
+## 0.4.0
+* Completely rewrote command execution system
+* Removed `lib/command/tool-imports.js` and merged it with `lib/command/command-imports.js`
+* Removed `this.specialOutput` and `this.output` from tool variables, now the return value of the `run()` function is used instead.
+* Added commands:
+  * `add-alias`
+  * `remove alias`
+  * `create-command`
+  * `create-tool`
+* Altered `commands.md` to reflect changes to the alias system
+* Added some Vim aliases
+
 ## 0.3.11
 * Fixed actual source of `getGrammars()` problem (previously mistaken as `atom.grammars`)
 * Added autocomplete - bound to `tab`

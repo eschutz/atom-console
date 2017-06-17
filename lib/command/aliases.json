@@ -1,17 +1,1 @@
-{
-  "package-install":"PackageInstaller",
-  "help":"listCommands",
-  "commands":"listCommands",
-  "search":"CommandSearch",
-  "find-command":"CommandSearch",
-  "find":"CommandSearch",
-  "shell":"ConsoleShell",
-  "terminal":"ConsoleShell",
-  "package-uninstall":"PackageUninstaller",
-  "calculator":"Calculator",
-  "calc":"Calculator",
-  "goto-line":"GoToLine",
-  "what-line":"whatLine",
-  "compile":"compile",
-  "cmp":"compile"
-}
+{"package-install":"PackageInstaller","help":"listCommands","commands":"listCommands","search":"CommandSearch","find-command":"CommandSearch","find":"CommandSearch","shell":"ConsoleShell","terminal":"ConsoleShell","package-uninstall":"PackageUninstaller","calculator":"Calculator","calc":"Calculator","goto-line":"GoToLine","what-line":"whatLine","compile":"compile","cmp":"compile","wq":["core:save","core:close"],"split":"pane:split-down-and-copy-active-item","vsplit":"pane:split-right-and-copy-active-item","tabnew":"application:new-file","tabnext":"pane:show-next-item","tabprev":"pane:show-previous-item","add-alias":"AliasCreator","remove-alias":"AliasRemover","rm-alias":"AliasRemover","create-tool":"createTool","create-command":"createCommand","new-tool":"createTool","create-cmd":"createCommand","new-command":"createCommand","new-cmd":"createCommand","w":"core:save","wall":"window:save-all","wall-qall":["window:save-all","window:close"],"q":"core:close","wqall":["core:save","window:close"],"qall":"window:close",":":"go-to-line:toggle","%":"find-and-replace:show"}
