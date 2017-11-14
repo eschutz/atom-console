@@ -1,3 +1,8 @@
+## 0.4.2
+* Completely rewrote autocomplete system, using a nice efficient [trie](https://en.wikipedia.org/wiki/Trie) structure instead of manual search.
+* Completely rewrote the calculator. It should now be more stable and actually works!
+* `cmp` can now compile Pascal code!
+
 ## 0.4.1
 * Edited `lib/atom-console.js` so spec won't fail.
 
