@@ -99,7 +99,7 @@ __Mandatory__
 
 __Optional__
 * `prefix`: the string preceding the input field, e.g. "Install package"
-* `networkTool`: set to `true` if the tool interacts with the internet, so `atom-console` knows to set a timeout
+* `async`: set to `true` if the tool executes asynchronously, for example in interactions with the internet or filesystem, so `atom-console` knows to set a timeout
 * `clearConsoleAfterSubmit`: option to clear the console when the `return` key is pressed, instead of having custom or default output
 * `historyFile`: an __absolute__ path to a history JSON file containing an array (cannot be empty, ensure it contains at least '[]')
 

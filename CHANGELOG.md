@@ -1,3 +1,9 @@
+## 0.4.3
+* Replaced Tool attribute `this.networkTool` with `this.async`
+* Fixed some bugs with autocomplete
+* Fixed cursor indentation in atom-console
+* Fixed some bugs with `package-install` and `package-uninstall`
+
 ## 0.4.2
 * Completely rewrote autocomplete system, using a nice efficient [trie](https://en.wikipedia.org/wiki/Trie) structure instead of manual search.
 * Completely rewrote the calculator. It should now be more stable and actually works!
