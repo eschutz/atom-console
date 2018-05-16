@@ -1,3 +1,8 @@
+## 0.4.4
+* Added exponentiation to the calculator via `**`
+* Added `reload` alias for `window-reload`
+* Bug fixes
+
 ## 0.4.3
 * Replaced Tool attribute `this.networkTool` with `this.async`
 * Fixed some bugs with autocomplete
