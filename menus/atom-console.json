@@ -2,7 +2,7 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle atom-console",
+        "label": "Toggle Atom Console",
         "command": "atom-console:toggle"
       }
     ]
