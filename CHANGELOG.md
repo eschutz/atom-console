@@ -1,3 +1,9 @@
+## 0.4.6
+* Tweaked text colour to fix display issues in Atom Material UI + bug fixes – [Issue #4](https://github.com/eschutz/atom-console/issues/4)
+
+## 0.4.5
+* Menu changes
+
 ## 0.4.4
 * Added exponentiation to the calculator via `**`
 * Added `reload` alias for `window-reload`

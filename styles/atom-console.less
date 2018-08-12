@@ -28,12 +28,12 @@
 .console-prefix {
     display: inline-block;
     left: 0;
-    color: @button-background-color-selected;
+    color: @text-color-info;
     font-weight: bold;
 }
 
 .custom-console-icon {
-  color: @button-background-color-selected;
+  color: @text-color-info;
 }
 
 .load-icon-wrapper {
@@ -56,6 +56,7 @@
 }
 
 atom-text-editor[mini].console{
+  position: absolute;
   display: inline-block;
   font-size: @input-font-size;
   background-color: @app-background-color;
@@ -64,6 +65,10 @@ atom-text-editor[mini].console{
   border-radius: 0;
   line-height: inherit;
   box-shadow: none;
+  // TODO:
+  // These settings cause line height and indentation issues for the Atom Material UI theme
+  // The line height and indentation can be hard coded but then it breaks it for every theme
+  // Find a solution that works for both
 }
 
 atom-text-editor[mini].console.is-focused {
